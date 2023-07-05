@@ -1,13 +1,23 @@
-import logo from "./logo.svg";
 import "./App.css";
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "awd-amplify/ui-react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>hello world</h1>
-      </header>
+      <View className="App">
+        <Card>
+          <image src={logo} className="App-logo" alt="logo" />
+          <Heading level={1}>WE NOW HAVE AUTH!</Heading>
+        </Card>
+      </View>
     </div>
   );
 }
